@@ -45,7 +45,7 @@ const URL = `${BASE_URL}/${fromCurr.value.toLowerCase()}.json`;
 
 
   let finalAmount =  (data[fromCurr.value.toLowerCase()][toCurr.value.toLowerCase()]*parseInt(amount.value)).toFixed(2);
-    msg.innerText = `${amtVal} ${fromCurr} = ${finalAmount} ${toCurr}`;
+    msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 };
 const updateFlag = (element) =>{
     let currCode = element.value;
